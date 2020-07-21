@@ -51,7 +51,6 @@ class Blog extends Component {
         <Switch>
           <Route path="/" exact component={Posts} />
           <Route path="/new-post" exact component={NewPost} />
-          <Route path="/posts/:id" exact component={FullPost} />
         </Switch>
         {/* to, čo bude medzi Switch componentom, to bude analyzovať Route a pustí vždy len prvý link, ktorý splní podmienku a ostatné nezobrazé, preto je dôležité, aby boli zoradené podľa priority; ak potrebujeme, tiež môžeme pred Switch dať Route, ktoré budú vždy analyzované a tak sa hrať, alebo to dať za... */}
         {/* "exact" command is that route must be only as it is;if it is ommited, then it is routing also to /new-post/something... */}
